@@ -1,21 +1,33 @@
 import React from 'react';
-import './App.css';
-import {BrowserRouter, Switch,Route} from 'react-router-dom'
-import Navbar from './components/Navbar'
+import "./App.css";
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Header from './Header';
+import Home from './Home'
 
 
 function App() {
     return (
-        <>
-        <BrowserRouter>
-        <Navbar /> 
-        <Switch>
-            <Route excat path = '/'/>
-        </Switch>
-        </BrowserRouter>
-           
-        </>
+      <Router>
+
+        <div className='app'>
+          <Switch>
+            <Route path="/checkout">
+            <Header />
+              <h1>Checkpoint</h1>
+            </Route>
+            <Route path="/login">
+              <h1>Login page</h1>
+            </Route>
+            {/* This is the default route */}
+            <Route path="/">
+            <Header />
+              <Home />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     )
 }
 
-export default App;
+export default App
+

@@ -1,0 +1,1 @@
+firebase link = https://console.firebase.google.com/u/0/project/e-clone-88941/settings/general/web:ZTgyNzI0MzgtMDMxYy00NDBjLTljMzItMGRlNWUxYWMyZWZm
